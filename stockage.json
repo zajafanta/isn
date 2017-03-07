@@ -1,0 +1,12 @@
+//modèle stockage questions
+{"idQuestion":0, // chaque question a un identifiant unique
+"contenuQuestion":"question", // le contenu de la question
+"thèmeQuestion":0, // Le thème de la question, pour éventuellement faire des quizz thématiques
+}
+
+//modèle stockage réponses
+{"idRéponse":0, // chaque réponse a aussi un identifiant unique au cas où
+"contenuRéponse":"blabla", // bah le contenu
+"questionAssociée":0, // pour pouvoir choisir quelle réponse afficher
+"statusJuste":true, // on veut toujours avoir une réponse juste donc le js doit pouvoir faire la différendce entre les réponses justes et fausses
+}
