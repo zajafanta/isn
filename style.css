@@ -1,0 +1,21 @@
+body {
+background-color:white;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.question{
+    position: relative;
+    padding-top: 5em;
+    text-align: center;
+  padding-left: 10em;
+  padding-right: 10em;
+    width:auto;
+}
+.reponse{
+    position: relative;
+    text-align: left;
+    padding-left: 15em;
+}
+
