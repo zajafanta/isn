@@ -1,6 +1,4 @@
-function change(id, value) {
-document.getElementById(id).innerHTML = value;
- }
+
 
 
 function readTextFile(file)
@@ -23,7 +21,7 @@ function readTextFile(file)
 }
 
 function load() {
-    var rawQuestions = readTextFile("https://paste.teknik.io/Raw/7pqun");
+    var rawQuestions = readTextFile("https://paste.teknik.io/Raw/IcbFA");
     alert(rawQuestions);
 	var questions = JSON.parse(rawQuestions);
 	console.log(questions[0].id);
@@ -32,8 +30,3 @@ function load() {
 	console.log(questions[1].contenuQuestion);
 }
 
-$("#submit").onclick(process);
-
-function process() {
-    a
-}
