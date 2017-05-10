@@ -1,0 +1,26 @@
+body {
+background-color:black;
+}
+
+.photos{
+     max-width: 75%;
+     height:auto;
+     float: left;
+     display:block;
+     flex-flow: column;
+}
+
+.liens{
+    margin-top: 0%;
+    position: relative;
+    float: right;
+    padding-right: 2em;
+}
+
+img{
+    width: 30%;
+}
+
+.texte{
+    font-size: 1.4vw;
+}

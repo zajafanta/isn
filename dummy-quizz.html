@@ -3,10 +3,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script type="text/javascript" src="new_script.js"></script>
+        <!--<script type="text/javascript" src="questions.js"></script>-->
     <meta charset="UTF-8"/>
     </head>
-<body>
-         <nav>
+<body>     
+ <nav>
     <div class="nav-wrapper purple darken-4">
       <a href="#" class="brand-logo">QCM de SVT Terminale S</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -21,7 +22,7 @@
     </div>
     
     <div class="row">
-        <div class="col s6 light-green lighten-1 offset-s3"><h5 class="center-align"><p>Question</p></h5>
+        <div id="stupidquestion" class="col s6 light-green lighten-1 offset-s3"><h5 class="center-align"><p>Question</p></h5>
     </div>
     </div>
     
@@ -41,22 +42,22 @@
     
     <form action="#">
     <p>
-      <input type="radio" name="group1" id="test1" value="r1" />
-    <label for="test1" >Réponse1</label>
+      <input type="radio" name="group1" value="r1" />
+    <label id="radio1"  ></label>
     </p>
     <p>
-      <input type="radio" name="group1" id="test2" value="r2" />
-      <label for="test2" >Réponse2</label>
+      <input type="radio" name="group1" value="r2" />
+      <label id="radio2"  ></label>
     </p>
     <p>
-        <input type="radio" name="group1"  id="test3" value="r3">
-        <label for="test3"  >Réponse3</label>
+        <input type="radio" name="group1" value="r3">
+        <label id="radio3"   ></label>
     </p>
     <p>
             <button id="valid" >Valider</button>
         </p>
          
-        </div>
+        </form>
 
 <!--        <script>
 function fetchJSONFile(path, callback) {
