@@ -30,9 +30,10 @@ function progression() {
     changeform();
     changeform(questions[progress].intitulé, questions[progress].repJuste, questions[progress].repFausse[0], questions[progress].repFausse[1]);
     progress++;
+    $("input[name=group1]").attr("checked",false);
 }
     
-    progression();
+progression();
 
     
 function change(id, value) {
@@ -41,12 +42,18 @@ document.getElementById(id).innerHTML = value;
 
 
 function validation(e) {
-   // e.preventDefault();
-    var foo = $("input[name=group1]:checked").attr("value");
-    console.log(foo);
-    if (undefined != foo) {
+    if (progress < 10){
+    e.preventDefault();
+    var foo = $("input[name=group1]:checked");
+    var v = foo.attr("value");
+    $("#frm")[0].reset();
+    console.log(v);
+    if (undefined != v) {
         progression();
+    }   
     }
+    $.cookie("note", note);
+    window.location = "projetfin.html";
 }
     
 
@@ -54,9 +61,9 @@ console.log(questions[0].theme);
     
 function changeform(stupidquestion, radio1, radio2, radio3) {
     change("stupidquestion", stupidquestion);
-    change("radio1", radio1);
-    change("radio2", radio2);
-    change("radio3", radio3);
+    change("1radio", radio1);
+    change("2radio", radio2);
+    change("3radio", radio3);
 }
     
 function Question(intitulé,theme,repJuste,repFausse,identifiant){
